@@ -1,0 +1,35 @@
+.shows-section {
+    padding: 20px;
+    background-color: #1e1e25; /* Adjust background color as needed */
+    color: #ffffff;
+  }
+  
+  .shows-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .shows-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .shows-container img {
+    width: 150px; /* Set a fixed width for each image */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .shows-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Optional: Hide scrollbar for a cleaner look */
+  .shows-container::-webkit-scrollbar {
+    display: none;
+  }
+  

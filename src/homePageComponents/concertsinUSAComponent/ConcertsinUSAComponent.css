@@ -1,0 +1,63 @@
+/* ConcertsInUSAComponent.css */
+.concerts-in-usa {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .link {
+    color: #4a90e2;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .concert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .concert-card {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .concert-card.large {
+    grid-column: span 2;
+    height: 400px;
+  }
+  
+  .concert-info {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .date {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+  
+  .artist {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .location {
+    font-size: 12px;
+  }
+  

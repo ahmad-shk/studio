@@ -1,0 +1,50 @@
+.entertainment-section {
+    padding: 20px;
+    background-color: #1e1e25; /* Adjust background color as needed */
+    color: #ffffff;
+  }
+  
+  .entertainment-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .entertainment-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .entertainment-item {
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+    flex-shrink: 0;
+  }
+  
+  .entertainment-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ffffff;
+  }
+  
+  .series-type {
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 0;
+  }
+  
+  .show-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0 0;
+  }
+  
