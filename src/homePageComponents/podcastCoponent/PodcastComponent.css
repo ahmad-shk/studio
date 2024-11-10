@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1d1f2f;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex: 2;
+    margin-right: 10px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .podcast-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .main-podcast {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+  }
+  
+  .main-podcast-info {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .date {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .sidebar-item {
+    position: relative;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Default in case of no image */
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sidebar-item .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+  

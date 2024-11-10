@@ -5,27 +5,27 @@ const shows = [
   {
     title: "Robot Future",
     description: "Unrelenting sci-fi saga. Searches for missing new technology, only to open a Pandora's box of the evil alien threat.",
-    image: "path/to/robot-future.jpg"
+    image: "../../../Ent1.png"
   },
   {
     title: "Doctor Strange",
     description: "Original Series",
-    image: "path/to/doctor-strange.jpg"
+    image: "../../../Ent2.png"
   },
   {
     title: "Illusion",
     description: "Original Series",
-    image: "path/to/illusion.jpg"
+    image: "../../../Ent3.png"
   },
   {
     title: "Broken Bridge",
     description: "Original Series",
-    image: "path/to/broken-bridge.jpg"
+    image: "../../../Ent4.png"
   },
   {
     title: "DC Movie",
     description: "Original Series",
-    image: "path/to/dc-movie.jpg"
+    image: "../../../Ent5.png"
   }
 ];
 

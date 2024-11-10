@@ -4,7 +4,7 @@ import './NewsComponent.css';
 const featuredArticle = {
   title: "Rising Stars: New Faces to Watch in Hollywood",
   description: "Rising stars in Hollywood, the new faces to watch, are generating buzz with their fresh talent and captivating performances, poised to make significant strides in shaping the future of cinema and entertainment.",
-  image: "path/to/featured-image.jpg",
+  image: "../../../news5big.png",
   label: "NEWS"
 };
 
@@ -13,25 +13,25 @@ const sideArticles = [
     title: "Celebrity Style: Fashion Trends from the Red Carpet",
     author: "TAYLOR BONE",
     date: "TODAY",
-    image: "path/to/article1.jpg"
+    image: "../../../new1.png"
   },
   {
     title: "Celebrity Style: Fashion Trends from the Red Carpet",
     author: "TAYLOR BONE",
     date: "YESTERDAY",
-    image: "path/to/article2.jpg"
+    image: "../../../news2.png"
   },
   {
     title: "Streaming Wars: Which Platform Has the Best Content?",
     author: "TAYLOR BONE",
     date: "YESTERDAY",
-    image: "path/to/article3.jpg"
+    image: "../../../news3.png"
   },
   {
     title: "Streaming Wars: Which Platform Has the Best Content?",
     author: "TAYLOR BONE",
     date: "2 DAYS AGO",
-    image: "path/to/article4.jpg"
+    image: "../../../news4.png"
   }
 ];
 

@@ -5,11 +5,11 @@ import './ConcertsinUSAComponent.css';
 function ConcertsinUSAComponent() {
   // Dummy concert data
   const concerts = [
-    { id: 1, date: 'THU · JAN 30 · 7:00 PM', artist: 'METALLICA', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: 'url-to-metallica-image' },
-    { id: 2, date: 'THU · JAN 30 · 7:00 PM', artist: 'DRAKE', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: 'url-to-drake-image' },
-    { id: 3, date: 'THU · JAN 30 · 7:00 PM', artist: 'METALLICA', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: 'url-to-metallica-image' },
-    { id: 4, date: 'THU · JAN 30 · 7:00 PM', artist: 'METALLICA', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: 'url-to-metallica-image' },
-    { id: 5, date: 'TODAY · 7:00 PM', artist: 'PINK PERFORMS ONSTAGE TODAY', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: 'url-to-pink-image', large: true }
+    { id: 1, date: 'THU · JAN 30 · 7:00 PM', artist: 'METALLICA', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: '../../../cncrt.png' },
+    { id: 2, date: 'THU · JAN 30 · 7:00 PM', artist: 'DRAKE', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: '../../../cncrt1.png' },
+    { id: 3, date: 'THU · JAN 30 · 7:00 PM', artist: 'METALLICA', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: '../../../cncrt2.png' },
+    { id: 4, date: 'THU · JAN 30 · 7:00 PM', artist: 'METALLICA', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: '../../../cncrt3.png' },
+    { id: 5, date: 'TODAY · 7:00 PM', artist: 'PINK PERFORMS ONSTAGE TODAY', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: '../../../cncrt4.png', large: true }
   ];
 
   return (
