@@ -30,14 +30,13 @@ const FirstComponent = () => {
   ];
 
   return (
-    <div style={styles.container}>
+    <div>
       {/* Main News Section */}
-      <div style={{ ...styles.mainNews, backgroundImage: `url(${mainNews.image})` }}>
-        <div style={styles.overlay}></div>
-        <div style={styles.mainNewsContent}>
-          <span style={styles.category}>{mainNews.category}</span>
-          <h2 style={styles.mainTitle}>{mainNews.title}</h2>
-          <p style={styles.description}>{mainNews.description}</p>
+      <div  className='h-[100vh] flex items-end justify-start object-contain' style={{backgroundImage: `url(${mainNews.image})`,backgroundRepeat:'no-repeat' }}>
+        <div className=''>
+          <span>{mainNews.category}</span>
+          <h2>{mainNews.title}</h2>
+          <p>{mainNews.description}</p>
         </div>
       </div>
 

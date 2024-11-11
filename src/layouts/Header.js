@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
 
 function Header() {
 
@@ -23,11 +22,11 @@ function Header() {
 
 
   return (
-    <header className="header">
-      <div className="logo">
+    <header className="header py-6 px-8 flex justify-between items-center text-white bg-[#00000087] fixed top-0 z-[5] w-full">
+      <div className="logo bg-white">
         <img src="../../../logo.png" alt="Logo" />
       </div>
-      <nav className="nav">
+      <nav className="nav flex gap-8">
         <Link to="/news">News</Link>
         <Link to="/shows">Shows</Link>
         <Link to="/entertainment">Entertainment</Link>

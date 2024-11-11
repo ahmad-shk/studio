@@ -7,17 +7,14 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     {/* Main Layout ke liye routes */}
-    //     <Route path="/" element={<MainLayout><Home /></MainLayout>} />
-    //     <Route path="/about" element={<MainLayout><About /></MainLayout>} />
-    //     <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
-    //   </Routes>
-    // </Router>
-    <h2 className='text-[red]'>
-      HEllo
-    </h2>
+    <Router>
+      <Routes>
+        {/* Main Layout ke liye routes */}
+        <Route path="/" element={<MainLayout><Home /></MainLayout>} />
+        <Route path="/about" element={<MainLayout><About /></MainLayout>} />
+        <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
+      </Routes>
+    </Router>
   );
 }
 
