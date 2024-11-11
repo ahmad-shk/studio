@@ -1,7 +1,7 @@
 import React from 'react';
 import './PodcastComponent.css'; // CSS file import karein
 
-const PodcastComponent = () => {
+const PodcastComponent = () => { 
   return (
     <div className="container">
       <div className="main-content">
