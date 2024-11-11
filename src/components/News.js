@@ -36,7 +36,7 @@ export default function News() {
         }
     ];
     return (
-        <div className='p-4 flex justify-between'>
+        <div className='p-4 flex justify-between gap-6 pt-12'>
             <div className='min-h-full flex flex-col items-start'>
                 <h3 className='text-[34px] font-bold'>NEWS</h3>
                 <div className='flex flex-col justify-between h-full'>
@@ -53,12 +53,12 @@ export default function News() {
                 <button className='font-bold text-[18px]'>see more</button>
             </div>
 
-            <div className="relative w-[60%]" >
-                <img src={featuredArticle.image} alt={featuredArticle.title} className='relative z-[1] w-full h-full max-h-[500px]'/>
+            <div className="relative w-[75%]" >
+                <img src={featuredArticle.image} alt={featuredArticle.title} className='relative z-[1] min-w-full h-full max-h-[500px]'/>
                 <div className="absolute z-[3] bottom-0 left-0 p-6 [&>*]:py-1">
                 <label className='px-6 py-1 bg-[#FF6A0D] rounded-full'>{featuredArticle.label}</label>
                     <h3 className='text-[32px] font-bold max-w-[70%]'>{featuredArticle.title}</h3>
-                    <p className=''>{featuredArticle.description}</p>
+                    <p className='max-w-[800px]'>{featuredArticle.description}</p>
                 </div>
             </div>
         </div>

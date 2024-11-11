@@ -11,13 +11,13 @@ export default function Concerts() {
     return (
         <div className='p-4'>
             <h3 className='text-[34px] font-bold leading-[1.6rem]'>Concerts<br /><span className='text-[20px] font-normal'>in USA</span></h3>
-            <div className='flex gap-2'>
-                <div className='grid grid-cols-2 grid-rows-2 gap-4 w-[60%]'>
+            <div className='flex gap-2 justify-between max-[1200px]:flex-col'>
+                <div className='grow grid grid-cols-2 gap-4 -min-w-full '>
                     {
                         concerts.map((element, index) => (
-                            <div className='relative'>
+                            <div className='relative '>
                                 <div className='min-w-[290px]'><img src={`${element.imgUrl}`} className='min-w-full max-h-[280px]' /></div>
-                                <div className='absolute bottom-[40px] left-[17%] flex flex-col items-center'>
+                                <div className='absolute bottom-[40px] h-full w-full flex flex-col items-center justify-end'>
                                     <label className='text-[13px]'>{element.date}</label>
                                     <label>{element.artist}</label>
                                     <p className='text-[13px]'>{element.location}</p>
@@ -26,9 +26,9 @@ export default function Concerts() {
                         ))
                     }
                 </div>
-                <div className='relative'>
-                    <div>
-                        <img src='../../../cncrt4.png' /> 
+                <div className='relative col-start-3 col-end-4 row-start-1'>
+                    <div className='h-full '>
+                        <img src='../../../cncrt4.png' className='min-h-[600px] min-w-full max-[1200px]:max-h-[600px]'/> 
                     </div>
                     <div className='absolute bottom-0 py-10 px-6 flex flex-col'>
                         <label className='text-[13px] pb-4'>TODAY · 7:00 PM</label>
