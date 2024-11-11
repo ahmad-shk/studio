@@ -1,58 +1,108 @@
 import React from 'react';
-// import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="px-8 pt-6 text-[white] border-t border-[white] bg-[#1e1e25]">
-      <div className='flex gap-12'>
-        <div>
-          <label className='font-semibold '>FEATURES</label>
-          <p>AS EQUALS</p>
-          <p>CALL TO EARTH</p>
-          <p>FREEDOM PROJECT</p>
-          <p>IMPACT YOUR WORLD</p>
-          <p>INSIDE AFRICA</p>
+    <footer className="bg-gray-900 text-white py-12">
+      <div className="mx-auto px-6 md:px-12">
+        <div className="flex flex-col md:flex-row md:justify-between space-y-12 md:space-x-12">
+
+          {/* Description Section */}
+          <div className="md:w-1/4">
+            <img src="../../../logo.png" alt="7 Studio Logo" className="w-50 h-auto" />
+            <p className="mt-4 text-gray-300">
+              7 Studio brings you 24/7 live streaming, headlines, bulletins, talk shows, infotainment, and much more. Watch minute-by-minute updates of current affairs and happenings from Pakistan and all around the world!
+            </p>
+          </div>
+
+          {/* Features Section */}
+          <div className="md:w-1/4">
+            <h3 className="text-lg font-semibold">Features</h3>
+            <ul className="mt-4 space-y-2 text-gray-300">
+              <li>As Equals</li>
+              <li>Call to Earth</li>
+              <li>Freedom Project</li>
+              <li>Impact Your World</li>
+              <li>Inside Africa</li>
+            </ul>
+          </div>
+
+          {/* Contact Section */}
+          <div className="md:w-1/4">
+            <h3 className="text-lg font-semibold">Contact</h3>
+            <p className="mt-4 text-gray-300">
+              <strong>Main Office:</strong><br />
+              350 5th Avenue New York, NY 10118
+            </p>
+            <p className="mt-4 text-gray-300">
+              <strong>Second Office:</strong><br />
+              7380 W. Sand Lake Rd. Suite #512 Orlando, FL, 32819
+            </p>
+            <p className="mt-4 text-gray-300">
+              <strong>Phone:</strong> 212-500-1228 | +1 800-380-1979
+            </p>
+            <p className="mt-4 text-gray-300">
+              <strong>Email:</strong> 7studioinc@gmail.com
+            </p>
+          </div>
+
+          {/* More Section */}
+          <div className="md:w-1/4">
+            <h3 className="text-lg font-semibold">More</h3>
+            <ul className="mt-4 space-y-2 text-gray-300">
+              <li>Script Looking</li>
+              <li>Musician Looking</li>
+              <li>Talent Looking</li>
+              <li>Production House</li>
+            </ul>
+          </div>
         </div>
 
-        <div>
-          <label className='font-semibold py-3'>ABOUT 7 STUDIOS</label>
-          <p>PHOTOS INVESTIGATION</p>
-          <p>7 STUDIOS PROFILE</p>
-          <p>7 STUDIOS LEADERSHIP</p>
-          <p>7 STUDIOS NEWSLETTER</p>
-          <p>WORK FOR 7 STUDIOS</p>
+        {/* Footer Bottom Section */}
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+
+            <div className="flex flex-col -items-center space-y-4 mt-8  ">
+              <div className="flex flex-wrap space-x-4 text-sm -text-gray-600">
+                <a href="#" className="hover:text-gray-900">Terms of Use</a>
+                <a href="#" className="hover:text-gray-900">About the 7 Studio</a>
+                <a href="#" className="hover:text-gray-900">Privacy Policy</a>
+                <a href="#" className="hover:text-gray-900">Cookies</a>
+                <a href="#" className="hover:text-gray-900">Accessibility Help</a>
+                <a href="#" className="hover:text-gray-900">Contact the 7 Studio</a>
+                <a href="#" className="hover:text-gray-900">Advertise with us</a>
+                <a href="#" className="hover:text-gray-900">Do not share or sell my info</a>
+                <a href="#" className="hover:text-gray-900">Contact Technical Support</a>
+              </div>
+
+              <p className="text-sm text-gray-500 mt-4 md:mt-0">
+                © 2024 7 Studio. All rights reserved. The 7 Studio is not responsible for the content of external sites.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-start items-end mt-4 md:mt-0 space-x-4">
+            <div className="justify-end">
+              <h1 className="font-extrabold">Follow 7 Studio on:</h1>
+            </div>
+            <div className="flex justify-end space-x-4 mt-4">
+              <a href="#" className="text-gray-500 hover:text-white">
+                <img src="../.../../fb-icon.png" alt="Facebook" />
+              </a>
+              <a href="#" className="text-gray-500 hover:text-white">
+                <img src="../.../../insta-icon.png" alt="Instagram" />
+              </a>
+              <a href="#" className="text-gray-500 hover:text-white">
+                <img src="../.../../youtube-icon.png" alt="YouTube" />
+              </a>
+              <a href="#" className="text-gray-500 hover:text-white">
+                <img src="../.../../twiter-icon.png" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+
+
+
         </div>
-      </div>
-
-      <div className='flex text-[12px] gap-4'>
-         <p>Terms of Use</p>
-         <p>About the BBC</p>
-         <p>Privacy Policy</p>
-         <p>Cookies</p>
-         <p>Accessibility Help</p>
-         <p>Contact the BBC</p>
-         <p>Advertise with us</p>
-         <p> Do not share or sell my info</p>
-         <p>Contact technical support</p>
-      </div>
-
-      <p className='text-[12px]'>Copyright 2024 BBC. All rights reserved. The BBC is not responsible for the content of external sites. Read about our approach to external linking.</p>
-
-      <div className='w-full flex justify-end'>
-        <div className=' flex flex-col gap-3'>
-        <label>FOLLOW 7 STUDIO ON</label>
-        <div className='flex justify-between'>
-          <button><img src='../../facebook.svg'/></button>
-          <button><img src='../../facebook.svg'/></button>
-          <button><img src='../../facebook.svg'/></button>
-          <button><img src='../../facebook.svg'/></button>
-          <button><img src='../../facebook.svg'/></button>
-      </div>
-      </div>
-      </div>
-
-      <div>
-        <img src=''/>
       </div>
     </footer>
   );
