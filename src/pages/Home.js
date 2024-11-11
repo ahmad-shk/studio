@@ -29,9 +29,6 @@ function Home() {
             <section className='podcastComponent'>
                 <PodcastComponent/>
             </section> */}
-
-
-
         </div>
     );
 }
