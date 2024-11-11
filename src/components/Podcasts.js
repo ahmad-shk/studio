@@ -7,7 +7,10 @@ export default function Podcasts() {
         {img:'../../podcast4.png',label:'POLITICS . BUSINESS'}
     ]
     return (
-        <div className='p-4 flex gap-3'>
+        <div className='p-4 pt-12'>
+            <h3 className='text-[34px] font-bold'>Podcast</h3>
+        
+        <div className='py-2 flex gap-3'>
             <div className='w-[75%] relative'>
                 <div>
                     <img src='../../podcast1.png' className='min-w-full h-[564px]'/>
@@ -18,7 +21,7 @@ export default function Podcasts() {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-2'>
+            <div className='flex flex-col gap-2 items-center w-[25%]'>
                 {
                     podcasts.map((element,index)=>(
                         <div className='flex flex-col items-center'>
@@ -28,6 +31,7 @@ export default function Podcasts() {
                     ))
                 }
             </div>
+        </div>
         </div>
     )
 }

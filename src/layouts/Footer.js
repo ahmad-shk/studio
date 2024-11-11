@@ -4,9 +4,13 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="px-8 pt-6 text-[white] border-t border-[white] bg-[#1e1e25]">
-      <div className='flex gap-12'>
+      <div className='flex gap-12 pb-12'>
+      <div className='max-w-[240px]'>
+          <p>7 studio brings you 24/7 Live Streaming, Headlines, Bulletins, Talk Shows, Infotainment, and much more. Watch minute-by-minute updates of current affairs and happenings from Pakistan and all around the world!</p>
+        </div>
+
         <div>
-          <label className='font-semibold '>FEATURES</label>
+          <label className='font-semibold'>FEATURES</label>
           <p>AS EQUALS</p>
           <p>CALL TO EARTH</p>
           <p>FREEDOM PROJECT</p>
@@ -15,12 +19,7 @@ function Footer() {
         </div>
 
         <div>
-          <label className='font-semibold py-3'>ABOUT 7 STUDIOS</label>
-          <p>PHOTOS INVESTIGATION</p>
-          <p>7 STUDIOS PROFILE</p>
-          <p>7 STUDIOS LEADERSHIP</p>
-          <p>7 STUDIOS NEWSLETTER</p>
-          <p>WORK FOR 7 STUDIOS</p>
+         <label></label>
         </div>
       </div>
 

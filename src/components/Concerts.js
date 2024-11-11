@@ -26,9 +26,9 @@ export default function Concerts() {
                         ))
                     }
                 </div>
-                <div className='relative col-start-3 col-end-4 row-start-1'>
+                <div className='relative min-[1400px]:w-[50%]'>
                     <div className='h-full '>
-                        <img src='../../../cncrt4.png' className='min-h-[600px] min-w-full max-[1200px]:max-h-[600px]'/> 
+                        <img src='../../../cncrt4.png' className='max-h-[600px] min-w-full max-[1200px]:max-h-[600px]'/> 
                     </div>
                     <div className='absolute bottom-0 py-10 px-6 flex flex-col'>
                         <label className='text-[13px] pb-4'>TODAY · 7:00 PM</label>
