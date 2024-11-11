@@ -15,8 +15,8 @@ function Footer() {
           </div>
 
           {/* Features Section */}
-          <div className="md:w-1/4">
-            <h3 className="text-lg font-semibold">Features</h3>
+          <div className="md:w-1/4 ">
+            <h3 className="text-lg font-semibold ">Features</h3>
             <ul className="mt-4 space-y-2 text-gray-300">
               <li>As Equals</li>
               <li>Call to Earth</li>
