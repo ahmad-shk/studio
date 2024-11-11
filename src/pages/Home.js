@@ -1,16 +1,11 @@
 import React from 'react';
-// import '../App.css'
-// import ShowsComopnent from '../homePageComponents/showsComopnent/ShowsComopnent';
-// import EntertainmantComponent from '../homePageComponents/entertainmantComponent/EntertainmantComponent';
-// import NewsComponent from '../homePageComponents/newsComponent/NewsComponent';
-// import ConcertsinUSAComponent from '../homePageComponents/concertsinUSAComponent/ConcertsinUSAComponent';
-// import PodcastComponent from '../homePageComponents/podcastCoponent/PodcastCoponent';
-import FirstComponent from '../homePageComponents/firstComponent/FirstComponent';
-import News from '../components/News';
-import Shows from '../components/Shows';
-import Entertainment from '../components/Entertainment';
-import Concerts from '../components/Concerts';
-import Podcasts from '../components/Podcasts';
+import ShowsComopnent from '../homePageComponents/ShowsComopnent';
+import EntertainmantComponent from '../homePageComponents/EntertainmantComponent';
+import NewsComponent from '../homePageComponents/NewsComponent';
+import ConcertsComponent from '../homePageComponents/ConcertsComponent';
+import PodcastComponent from '../homePageComponents/PodcastCoponent';
+import FirstComponent from '../homePageComponents/FirstComponent';
+
 
 
 function Home() {
@@ -20,32 +15,20 @@ function Home() {
                 <FirstComponent />
             </section>
              <section className='newsComponent'>
-                <News/>
+                <NewsComponent/>
             </section>
             <section>
-                <Shows/>
+                <ShowsComopnent/>
                 </section>
                 <section>
-                    <Entertainment/>
+                    <EntertainmantComponent/>
                 </section>
                 <section>
-                    <Concerts/>
+                    <ConcertsComponent/>
                 </section>
                 <section>
-                    <Podcasts/>
+                    <PodcastComponent/>
                 </section>
-            {/* <section className='showSection'>
-                <ShowsComopnent />
-            </section>
-            <section className='entertainmantComponent'>
-                <EntertainmantComponent />
-            </section>
-            <section className='concertsInUSAComponent'>
-                <ConcertsinUSAComponent/>
-            </section>
-            <section className='podcastComponent'>
-                <PodcastComponent/>
-            </section>  */}
         </div>
     );
 }
