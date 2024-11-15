@@ -2,8 +2,10 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import News from './pages/News';
+import Shows from './pages/Shows';
+import Entertainment from './pages/Entertainment';
+import ConcertsinUSA from './pages/ConcertsinUSA';
 
 function App() {
   return (
@@ -11,8 +13,10 @@ function App() {
       <Routes>
         {/* Main Layout ke liye routes */}
         <Route path="/" element={<MainLayout><Home /></MainLayout>} />
-        <Route path="/about" element={<MainLayout><About /></MainLayout>} />
-        <Route path="/contact" element={<MainLayout><Contact /></MainLayout>} />
+        <Route path="/News" element={<MainLayout><News /></MainLayout>} />
+        <Route path="/Shows" element={<MainLayout><Shows /></MainLayout>} />
+        <Route path="/Entertainment" element={<MainLayout><Entertainment /></MainLayout>} />
+        <Route path="/ConcertsinUSA" element={<MainLayout><ConcertsinUSA /></MainLayout>} />
       </Routes>
     </Router>
   );
