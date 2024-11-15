@@ -1,15 +1,13 @@
 import React from 'react';
 
 function News() {
-  // Main article data
-  const mainArticle = {
-    title: "Trump taps Florida lawmaker Mike Waltz to be national security adviser",
-    description: "Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?",
-    image: "../../../NewsPagePic1.png",
-  };
-
-  // Array of other articles
   const articles = [
+    {
+      title: "Trump taps Florida lawmaker Mike Waltz to be national security adviser",
+      description: "Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?Two sources familiar with the matter told CBS News, the BBC's US news partner, that Trump is expected to pick the Florida congressman. Who is Elise Stefanik, Trump’s pick for UN ambassador?",
+      image: "../../../NewsPagePic1.png",
+      main: true
+    },
     {
       title: "Climate fight 'bigger than one election,' says Biden's top envoy",
       image: "NewsPagePic2.png",
@@ -83,44 +81,48 @@ function News() {
       category: "Business",
     },
   ];
-
+  const mainArticle = articles.find((article) => article.main);
   return (
     <div className="p-4 pt-20 mt-8 ">
-      <h1 className="text-2xl font-extrabold mb-4 border-b border-gray-300">NEWS</h1>
+      <h1 className="text-2xl font-extrabold mb-4 border-b border-gray-600">NEWS</h1>
 
       {/* Main Article */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mt-8">
-        <div className="p-4">
-          <h2 className="text-2xl font-extrabold mb-2">{mainArticle.title}</h2>
-          <p className="text-gray-600 font-bold mb-2">{mainArticle.description}</p>
+      {mainArticle && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mt-8">
+          <div className="p-4">
+            <h2 className="text-2xl font-extrabold mb-2">{mainArticle.title}</h2>
+            <p className="text-gray-600 font-bold mb-2">{mainArticle.description}</p>
+          </div>
+          <div>
+            <img
+              src={mainArticle.image}
+              alt="Main news"
+              className="w-full h-100 object-cover"
+            />
+          </div>
         </div>
-        <div>
-          <img
-            src={mainArticle.image}
-            alt="Main news"
-            className="w-full h-100 object-cover"
-          />
-        </div>
-      </div>
+      )}
 
 
       {/* Other Articles */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {articles.map((article, index) => (
-          <div key={index} className="bg-white  p-4">
-            <img
-              src={article.image}
-              alt={`Thumbnail ${index + 1}`}
-              className="w-full h-50 object-cover mb-2"
-            />
-            <h3 className="text-lg font-semibold mb-1">{article.title}</h3>
-            <p className="text-sm text-gray-500">
-              {article.time} | {article.category}
-            </p>
-          </div>
-        ))}
+        {articles
+          .filter((article) => !article.main) // Exclude the main article
+          .map((article, index) => (
+            <div key={index} className="bg-white p-4 shadow-md">
+              <img
+                src={article.image}
+                alt={`Thumbnail ${index + 1}`}
+                className="w-full h-50 object-cover mb-2"
+              />
+              <h3 className="text-lg font-semibold mb-1">{article.title}</h3>
+              <p className="text-sm text-gray-500">
+                {article.time} | {article.category}
+              </p>
+            </div>
+          ))}
       </div>
-    </div>
+    </div >
   );
 }
 
