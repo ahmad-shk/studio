@@ -45,15 +45,16 @@ function  Shows() {
   ];
 
   return (
-    <div className="bg-gray-900 mt-20 text-white p-8">
-    <h1 className="text-3xl font-extrabold mb-6 border-b border-gray-700 pb-4">
+    <div className='bg-[#11161F] py-32'>
+    <div className="bg-[#11161F] text-white p-8 max-w-[1600px] mx-auto">
+    <h1 className="text-[36px] font-bold mb-6 border-b border-gray-700 pb-4">
       TV SHOWS
     </h1>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div className="grid min-[800px]:grid-cols-2 pt-12 gap-10">
       {shows.map((show, index) => (
         <div
           key={index}
-          className="relative h-64 bg-gray-800 rounded-lg overflow-hidden shadow-lg"
+          className="relative h-[420px]"
         >
           <img
             src={show.image}
@@ -61,12 +62,13 @@ function  Shows() {
             className="absolute inset-0 w-full h-full object-cover opacity-70"
           />
           <div className="absolute bottom-0 left-0 p-4 text-white">
-            <h2 className="text-lg font-bold">{show.title}</h2>
-            <p className="text-sm">{show.time}</p>
+            <h2 className="text-[22px]] font-bold">{show.title}</h2>
+            <p className="text-[12px]">{show.time}</p>
           </div>
         </div>
       ))}
     </div>
+  </div>
   </div>
   );
 };

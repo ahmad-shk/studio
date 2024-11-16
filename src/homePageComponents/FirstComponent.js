@@ -39,7 +39,7 @@ const FirstComponent = () => {
         </div>
       </div>
     </div>
-    <div className='grid grid-cols-4 grid-row-1 gap-4 p-4'>
+    <div className='grid grid-cols-4 grid-row-1 gap-4 p-4 max-[850px]:grid-cols-2'>
             {thumbnailArticles.map((element,index) => (
                 <div className='relative'><div className='relative z-[1]'><img src={`${thumbnailArticles[index].image}`} className='rounded-xl'/></div><label className='absolute z-[3] text-white font-semibold bottom-0 p-2 max-w-[80%]'>{thumbnailArticles[index].title}</label></div>
             ))}

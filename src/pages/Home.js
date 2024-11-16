@@ -10,7 +10,8 @@ import FirstComponent from '../homePageComponents/FirstComponent';
 
 function Home() {
     return (
-        <div className="homepage bg-[#1e1e25] text-[white]">
+        <div className='bg-[#1e1e25]'>
+        <div className="homepage  text-[white] max-w-[1600px] mx-auto">
             <section className='firstComponent'>
                 <FirstComponent />
             </section>
@@ -29,6 +30,7 @@ function Home() {
                 <section>
                     <PodcastComponent/>
                 </section>
+        </div>
         </div>
     );
 }

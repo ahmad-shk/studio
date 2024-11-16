@@ -13,7 +13,7 @@ return (
     <div className='p-4'>
         <h3 className='text-[34px] font-bold leading-[1.6rem]'>Concerts<br /><span className='text-[20px] font-normal'>in USA</span></h3>
         <div className='flex gap-2 justify-between max-[1200px]:flex-col'>
-            <div className='grow grid grid-cols-2 gap-4 -min-w-full '>
+            <div className='grow grid grid-cols-2 gap-4 -min-w-full max-[620px]:grid-cols-1'>
                 {
                     concerts.map((element, index) => (
                         <div className='relative '>
