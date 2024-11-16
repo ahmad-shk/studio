@@ -96,7 +96,9 @@ function News() {
   const mainArticle = articles.find((article) => article.main);
   return (
     <div className="px-8 pt-32 max-w-[1600px] mx-auto">
-      <h1 className="text-[36px] font-extrabold mb-4 border-b border-gray-600">NEWS</h1>
+      <h1 className="text-[40px] font-extrabold border-b mb-6 pb-4">
+      NEWS
+    </h1>
 
       {/* Main Article */}
       {mainArticle && (
@@ -117,7 +119,7 @@ function News() {
 
 
       {/* Other Articles */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 pt-16 pb-4">
         {articles
           .filter((article) => !article.main) // Exclude the main article
           .map((article, index) => (

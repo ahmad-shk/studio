@@ -45,9 +45,9 @@ function  Shows() {
   ];
 
   return (
-    <div className='bg-[#11161F] py-32'>
-    <div className="bg-[#11161F] text-white p-8 max-w-[1600px] mx-auto">
-    <h1 className="text-[36px] font-bold mb-6 border-b border-gray-700 pb-4">
+    <div className='bg-[#11161F] pt-32 pb-4'>
+    <div className="bg-[#11161F] text-white px-8 max-w-[1600px] mx-auto">
+    <h1 className="text-[36px] font-bold border-b mb-6 pb-4">
       TV SHOWS
     </h1>
     <div className="grid min-[800px]:grid-cols-2 pt-12 gap-10">
