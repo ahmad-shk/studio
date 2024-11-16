@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function News() {
+  const navigate = useNavigate();
   const articles = [
     {
       title: "Trump taps Florida lawmaker Mike Waltz to be national security adviser",
@@ -94,18 +96,23 @@ function News() {
     },
   ];
   const mainArticle = articles.find((article) => article.main);
+
+  const clickArticle = () => {
+    navigate("/NewsBlog");
+  };
+
   return (
     <div className="px-8 pt-32 max-w-[1600px] mx-auto">
       <h1 className="text-[36px] font-extrabold mb-4 border-b border-gray-600">NEWS</h1>
 
       {/* Main Article */}
       {mainArticle && (
-        <div className="flex gap-12 items-center pt-8 max-[1050px]:flex-col-reverse max-[1050px]:gap-0">
+        <div className="flex gap-12 items-center pt-8 max-[1050px]:flex-col-reverse max-[1050px]:gap-0" >
           <div className="min-[1050px]:max-w-[390px]  w-full">
-            <h2 className="text-[36px] font-extrabold mb-2">{mainArticle.title}</h2>
-            <p className="text-[25px] font-semibold mb-2">{mainArticle.description}</p>
+            <h2 className="text-[36px] font-extrabold mb-2" onClick={clickArticle}>{mainArticle.title}</h2>
+            <p className="text-[25px] font-semibold mb-2" >{mainArticle.description}</p>
           </div>
-          <div className='w-full min-[1050px]:min-h-[510px] '>
+          <div className='w-full min-[1050px]:min-h-[510px] ' onClick={clickArticle}>
             <img
               src={mainArticle.image}
               alt="Main news"
@@ -121,13 +128,13 @@ function News() {
         {articles
           .filter((article) => !article.main) // Exclude the main article
           .map((article, index) => (
-            <div key={index} className="bg-white">
+            <div key={index} className="bg-white " onClick>
               <img
                 src={article.image}
                 alt={`Thumbnail ${index + 1}`}
                 className="w-full h-50 object-cover mb-2"
               />
-              <h3 className="text-lg font-semibold">{article.title}</h3>
+              <h3 className="text-lg font-semibold" >{article.title}</h3>
               <p className='text-[13px] text-[#040404] pb-4'>{article.description}</p>
               <p className="text-sm text-gray-500">
                 {article.time} | {article.category}
