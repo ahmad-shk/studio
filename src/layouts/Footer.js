@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-12">
-      <div className="">
-        <div className="flex flex-col md:flex-row gap-8 justify-between min-[1400px]:mr-32 pb-8 space-y-12 md:space-x-12 mx-auto px-6 md:px-12">
+    <footer className="bg-[#1e1e25] text-white pt-12 border-t">
+      <div className="max-w-[1600px] mx-auto">
+        <div className="flex flex-col  md:flex-row gap-8 justify-between min-[1400px]:mr-32 pb-8 space-y-12 md:space-x-12 mx-auto px-6 md:px-12">
 
           {/* Description Section */}
           <div className="w-[300px]">
@@ -63,7 +63,7 @@ function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
 
             <div className="flex flex-col -items-center space-y-4 mt-8  ">
-              <div className="flex flex-wrap space-x-4 text-sm -text-gray-600">
+              <div className="flex flex-wrap gap-4 text-sm -text-gray-600">
                 <a href="#" className="hover:text-gray-900">Terms of Use</a>
                 <a href="#" className="hover:text-gray-900">About the 7 Studio</a>
                 <a href="#" className="hover:text-gray-900">Privacy Policy</a>

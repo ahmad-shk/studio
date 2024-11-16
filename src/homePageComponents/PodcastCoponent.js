@@ -7,7 +7,7 @@ const PodcastComponent = () => {
     {img:'../../podcast4.png',label:'POLITICS . BUSINESS'}
 ]
 return (
-    <div className='p-4 pt-12'>
+    <div className='p-4 pt-8'>
         <h3 className='text-[34px] font-bold'>Podcast</h3>
     
     <div className='py-2 flex gap-3 max-[800px]:flex-col'>
