@@ -31,7 +31,7 @@ function Header() {
         <Link to="/news">News</Link>
         <Link to="/shows">Shows</Link>
         <Link to="/entertainment">Entertainment</Link>
-        <Link to="/concerts">Concerts in USA</Link>
+        <Link to="/concertsinusa">Concerts in USA</Link>
         <Link to="/podcast">Podcast</Link>
         <Link to="/makeup">Makeup Show</Link>
       </nav>
