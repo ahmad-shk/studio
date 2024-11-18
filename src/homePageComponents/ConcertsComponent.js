@@ -10,9 +10,9 @@ function ConcertsComponent() {
     // { id: 5, date: 'TODAY · 7:00 PM', artist: 'PINK PERFORMS ONSTAGE TODAY', location: 'Las Vegas, NV · Harrison School for the Arts', imgUrl: '../../../cncrt4.png', large: true }
 ];
 return (
-    <div className='p-4'>
-        <h3 className='text-[34px] font-bold leading-[1.6rem]'>Concerts<br /><span className='text-[20px] font-normal'>in USA</span></h3>
-        <div className='flex gap-2 justify-between max-[1200px]:flex-col'>
+    <div className='p-4 pt-8'>
+        <h3 className='text-[34px] px-1 font-bold leading-[1.6rem]'>Concerts<br /><span className='text-[20px] font-normal'>in USA</span></h3>
+        <div className='flex gap-2 justify-between max-[1200px]:flex-col pt-3'>
             <div className='grow grid grid-cols-2 gap-4 -min-w-full max-[620px]:grid-cols-1'>
                 {
                     concerts.map((element, index) => (

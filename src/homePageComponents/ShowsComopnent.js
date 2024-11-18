@@ -11,7 +11,7 @@ function ShowsComopnent() {
     { image: '../../show3.png' }
 ]
 return (
-    <div className='p-4'>
+    <div className='p-4 pt-6'>
         <h3 className='text-[34px] font-bold'>Shows</h3>
         <div className='flex overflow-x-hidden gap-2 relative'>
             {

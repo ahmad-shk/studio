@@ -49,8 +49,8 @@ function Entertainment() {
     }
   ]
   return (
-    <div className='bg-[#11161F] py-32'>
-    <div className="bg-[#11161F] text-white p-8 max-w-[1600px] mx-auto">
+    <div className='bg-[#11161F] pt-32 pb-4'>
+    <div className="bg-[#11161F] text-white px-8 max-w-[1600px] mx-auto">
     <h1 className="text-[36px] font-bold mb-6 border-b  pb-4">
       ENTERTAINMENT
     </h1>
