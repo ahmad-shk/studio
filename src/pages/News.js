@@ -128,7 +128,7 @@ function News() {
         {articles
           .filter((article) => !article.main) // Exclude the main article
           .map((article, index) => (
-            <div key={index} className="bg-white " onClick>
+            <div key={index} className="bg-white " onClick={clickArticle}>
               <img
                 src={article.image}
                 alt={`Thumbnail ${index + 1}`}

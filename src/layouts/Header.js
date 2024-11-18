@@ -26,7 +26,7 @@ function Header() {
       <div className="logo">
         <img src="../../../logo.png" alt="Logo" />
       </div>
-      <nav className="nav text-[#C7C7C7] flex gap-12 hover:[&>*]:text-[white] font-bold max-[1200px]:hidden">
+      <nav className="nav text-[#C7C7C7] flex gap-12 hover:[&>*]:text-[white] -font-bold max-[1200px]:hidden">
         <Link to="/">Home</Link>
         <Link to="/news">News</Link>
         <Link to="/shows">Shows</Link>
