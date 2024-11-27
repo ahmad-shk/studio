@@ -52,7 +52,7 @@ function EntertainmantComponent() {
   return (
     <div className='p-4 pt-8'>
       <h3 className='text-[34px] font-bold'>Entertainment</h3>
-      <div className='flex gap-2 justify-between overflow-hidden'>
+      <div className='flex gap-2 justify-between -overflow-hidden'>
         {
           shows.map((element, index) => (
             <div className='w-full relative'>
