@@ -5,20 +5,31 @@ import NewsComponent from '../homePageComponents/NewsComponent';
 import ConcertsComponent from '../homePageComponents/ConcertsComponent';
 import PodcastComponent from '../homePageComponents/PodcastCoponent';
 import FirstComponent from '../homePageComponents/FirstComponent';
-import ContactForm from '../homePageComponents/ContactForm';
 
 
 
 function Home() {
     return (
-        <div className='bg-[#1e1e25] bg-opacity-40'>
+        <div className='bg-[#11161F] '>
             <div className="homepage  text-[white] max-w-[1600px] mx-auto ">
-                <section className='firstComponent'>
+            <section className='firstComponent'>
                     <FirstComponent />
                 </section>
+                <section className='firstComponent'>
+                    <NewsComponent />
+                </section>
                
-                <section className='flex items-center justify-center mt-8'>
-                    <ContactForm />
+                <section className='firstComponent'>
+                    <ShowsComopnent />
+                </section>
+                <section className='firstComponent'>
+                    <EntertainmantComponent />
+                </section>
+                <section className='firstComponent'>
+                    <ConcertsComponent />
+                </section>
+                <section className='firstComponent'>
+                    <PodcastComponent />
                 </section>
             </div>
         </div>
