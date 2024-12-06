@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function NewsComponent() {
+  const navigate =useNavigate()
   const featuredArticle = {
     title: "Rising Stars: New Faces to Watch in Hollywood",
     description: "Rising stars in Hollywood, the new faces to watch, are generating buzz with their fresh talent and captivating performances, poised to make significant strides in shaping the future of cinema and entertainment.",
@@ -54,7 +56,7 @@ function NewsComponent() {
           ))}
         </div>
         
-        <button className='font-bold text-[18px] max-[1299px]:hidden'>see more</button>
+        <button className='font-bold text-[18px] max-[1299px]:hidden' onClick={()=>{navigate("/News")}}>see more</button>
       </div>
 
       <div className="relative  grow" >

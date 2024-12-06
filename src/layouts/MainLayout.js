@@ -3,12 +3,12 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 function MainLayout({ children }) {
-  const handleWhatsAppClick = () => {
-    const phoneNumber = "+923173070894"; // اپنا WhatsApp نمبر ڈالیں
-    const message = "Hello! I need assistance."; // اپنا میسج ڈالیں
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, "_blank");
-  };
+  // const handleWhatsAppClick = () => {
+  //   const phoneNumber = "+923173070894"; 
+  //   const message = "Hello! I need assistance."; 
+  //   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  //   window.open(whatsappURL, "_blank");
+  // };
 
   return (
     <div>
@@ -26,24 +26,21 @@ function MainLayout({ children }) {
       </footer>
 
       {/* WhatsApp Button */}
-      <div className="fixed bottom-8 right-8">
+      {/* <div className="fixed bottom-8 right-8">
         <div
           onClick={handleWhatsAppClick}
           className="relative group cursor-pointer"
         >
-          {/* WhatsApp Icon */}
           <img
-            src="../../../whatsapp.png" // آئیکن کا راستہ
+            src="../../../whatsapp.png" 
             alt="WhatsApp Icon"
-            className="w-16 h-16" // آئیکن کا سائز بڑا
+            className="w-16 h-16" 
           />
-
-          {/* Text on Hover */}
           <span className="absolute top-1/2 -left-[130px] transform -translate-y-1/2 bg-green-600 text-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             WhatsApp us
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
