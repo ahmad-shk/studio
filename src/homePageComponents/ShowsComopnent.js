@@ -9,8 +9,8 @@ function ShowsComponent() {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToShow: 6,
+    slidesToScroll: 3,
     autoplay: false,
     autoplaySpeed: 7000,
   };
