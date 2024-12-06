@@ -7,6 +7,7 @@ import Shows from './pages/Shows';
 import Entertainment from './pages/Entertainment';
 import ConcertsinUSA from './pages/ConcertsinUSA';
 import Podcast from './pages/Podcast';
+import NewsBlog from './pages/NewsBlog';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Entertainment" element={<MainLayout><Entertainment /></MainLayout>} />
         <Route path="/ConcertsinUSA" element={<MainLayout><ConcertsinUSA /></MainLayout>} />
         <Route path="/podcast" element={<MainLayout><Podcast /></MainLayout>} />
+         <Route path="/podcast" element={<MainLayout><NewsBlog /></MainLayout>} />
       </Routes>
     </Router>
   );
