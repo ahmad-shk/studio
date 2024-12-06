@@ -1,6 +1,18 @@
 import React from 'react';
+import Slider from 'react-slick'; // Import Slider from react-slick
+import "slick-carousel/slick/slick.css"; // Import slick styles
+import "slick-carousel/slick/slick-theme.css"; // Import slick theme styles
 
 function EntertainmantComponent() {
+  const slickSettings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 7000,
+  };
   const shows = [
     {
       title: "Robot Future",
@@ -52,6 +64,7 @@ function EntertainmantComponent() {
   return (
     <div className='p-4 pt-8'>
       <h3 className='text-[34px] font-bold'>Entertainment</h3>
+    
       <div className='flex gap-2 justify-between -overflow-hidden'>
         {
           shows.map((element, index) => (
