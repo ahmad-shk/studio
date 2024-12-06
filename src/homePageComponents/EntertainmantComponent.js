@@ -10,7 +10,7 @@ function EntertainmantComponent() {
     speed: 1000,
     slidesToShow: 7, // Number of slides to show
     slidesToScroll: 3, // Number of slides to scroll
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 7000,
   };
   const shows = [
