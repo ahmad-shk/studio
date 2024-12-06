@@ -23,12 +23,7 @@ function Header() {
         <Link to="/makeup">Makeup Show</Link>
       </nav>
       <div className="menu-icon">
-        <button
-          onClick={handleWhatsAppClick}
-          className="bg-green-600 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700 transition duration-300 shadow-lg"
-        >
-          +923173070894
-        </button>
+      <img src="../../../menuB.png" alt="Logo" />
       </div>
 
     </header>
