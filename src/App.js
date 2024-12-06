@@ -14,7 +14,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Main Layout ke liye routes */}
         <Route path="/" element={<MainLayout><Home /></MainLayout>} />
         <Route path="/News" element={<MainLayout><News /></MainLayout>} />
         <Route path="/Shows" element={<MainLayout><Shows /></MainLayout>} />
