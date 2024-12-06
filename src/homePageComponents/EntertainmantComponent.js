@@ -8,9 +8,9 @@ function EntertainmantComponent() {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: false,
+    slidesToShow: 7, // Number of slides to show
+    slidesToScroll: 3, // Number of slides to scroll
+    autoplay: true,
     autoplaySpeed: 7000,
   };
   const shows = [
@@ -64,8 +64,7 @@ function EntertainmantComponent() {
   return (
     <div className='p-4 pt-8'>
       <h3 className='text-[34px] font-bold'>Entertainment</h3>
-    
-      <div className='flex gap-2 justify-between -overflow-hidden'>
+      <Slider {...slickSettings}className='flex gap-2 justify-between -overflow-hidden'>
         {
           shows.map((element, index) => (
             <div className='w-full relative'>
@@ -77,7 +76,7 @@ function EntertainmantComponent() {
             </div>
           ))
         }
-      </div>
+      </Slider>
     </div>
   )
 }
