@@ -21,7 +21,7 @@ function App() {
         <Route path="/Entertainment" element={<MainLayout><Entertainment /></MainLayout>} />
         <Route path="/ConcertsinUSA" element={<MainLayout><ConcertsinUSA /></MainLayout>} />
         <Route path="/podcast" element={<MainLayout><Podcast /></MainLayout>} />
-         <Route path="/podcast" element={<MainLayout><NewsBlog /></MainLayout>} />
+         <Route path="/NewsBlog" element={<MainLayout><NewsBlog /></MainLayout>} />
       </Routes>
     </Router>
   );
