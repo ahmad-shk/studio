@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+923173070894"; // اپنا WhatsApp نمبر ڈالیں
-    const message = "Hello! I need assistance."; // اپنا میسج ڈالیں
+    const phoneNumber = "+923173070894"; 
+    const message = "Hello! I need assistance."; 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappURL, "_blank");
   };
