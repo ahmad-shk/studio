@@ -14,7 +14,7 @@ function Header() {
         <Link to="/entertainment">Entertainment</Link>
         <Link to="/concertsinusa">Concerts in USA</Link>
         <Link to="/podcast">Podcast</Link>
-        <Link to="/makeup">Makeup Show</Link>
+        {/* <Link to="/makeup">Makeup Show</Link> */}
       </nav>
       <div className="menu-icon">
       <img src="../../../menuB.png" alt="Logo" />
